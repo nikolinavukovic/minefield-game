@@ -23,7 +23,7 @@
                 }
             }
 
-            var shuffledPositions = positions.OrderBy(x => random.Next()).ToList();
+            var shuffledPositions = positions.Skip(1).OrderBy(x => random.Next()).ToList();
 
             for (int i = 0; i < mineCount; i++)
             {
